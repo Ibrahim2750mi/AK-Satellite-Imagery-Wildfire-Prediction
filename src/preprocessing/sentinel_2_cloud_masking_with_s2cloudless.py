@@ -262,7 +262,7 @@ def display_cloud_layers(col):
     m.add_child(folium.LayerControl())
 
     # Display the map.
-    m.save("s2-cloud-layers             .html")
+    m.save("s2-cloud-layers.html")
 
 """### Display mask component layers
 
