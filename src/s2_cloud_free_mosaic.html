@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a5f02651c53d00cf5ce3f7cc4ba17e85 {
+                #map_c595945e6329e7a10c71f80b26d8b11c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_a5f02651c53d00cf5ce3f7cc4ba17e85" ></div>
+            <div class="folium-map" id="map_c595945e6329e7a10c71f80b26d8b11c" ></div>
         
 </body>
 <script>
     
     
-            var map_a5f02651c53d00cf5ce3f7cc4ba17e85 = L.map(
-                "map_a5f02651c53d00cf5ce3f7cc4ba17e85",
+            var map_c595945e6329e7a10c71f80b26d8b11c = L.map(
+                "map_c595945e6329e7a10c71f80b26d8b11c",
                 {
-                    center: [62.519356720530226, -145.0],
+                    center: [64.99771649791191, -147.00000000000006],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 12,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_6a742a40089ab4b7dd3cfc3416fddb86 = L.tileLayer(
+            var tile_layer_4c2ce8249cba18e31c8234d89b9c35d2 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,11 +95,11 @@
             );
         
     
-            tile_layer_6a742a40089ab4b7dd3cfc3416fddb86.addTo(map_a5f02651c53d00cf5ce3f7cc4ba17e85);
+            tile_layer_4c2ce8249cba18e31c8234d89b9c35d2.addTo(map_c595945e6329e7a10c71f80b26d8b11c);
         
     
-            var tile_layer_d2025ae14bc9b78bf988d6496718a5f2 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/s2cloudles/maps/c1ab62ba8c2cf048b36cdc3d268c1937-d1dccbb583e1113dc78ef89f7a49aac4/tiles/{z}/{x}/{y}",
+            var tile_layer_47f65d44929887bcf54abaef250c6815 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/s2cloudles/maps/e1a8a392194511551cce52f096261990-defd55562a21fd40e6e3865c003ced9a/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 9,
   "maxZoom": 18,
@@ -115,26 +115,44 @@
             );
         
     
-            tile_layer_d2025ae14bc9b78bf988d6496718a5f2.addTo(map_a5f02651c53d00cf5ce3f7cc4ba17e85);
+            tile_layer_47f65d44929887bcf54abaef250c6815.addTo(map_c595945e6329e7a10c71f80b26d8b11c);
         
     
-            var layer_control_26fac644139c0a63cfce72b1cf691be2_layers = {
+            var tile_layer_b798310643a4ece9f581d46ead3d2c04 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/s2cloudles/maps/f2e6cde973f5234c509c8cdde09de2d1-b569b0e2815c6a2465c5182bcaa4b46d/tiles/{z}/{x}/{y}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var layer_control_c64229a6c8e22e0a2649162503f437f2_layers = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_6a742a40089ab4b7dd3cfc3416fddb86,
+                    "openstreetmap" : tile_layer_4c2ce8249cba18e31c8234d89b9c35d2,
                 },
                 overlays :  {
-                    "S2 cloud-free mosaic" : tile_layer_d2025ae14bc9b78bf988d6496718a5f2,
+                    "S2 cloud-free mosaic" : tile_layer_47f65d44929887bcf54abaef250c6815,
+                    "NDVI vegetation index" : tile_layer_b798310643a4ece9f581d46ead3d2c04,
                 },
             };
-            let layer_control_26fac644139c0a63cfce72b1cf691be2 = L.control.layers(
-                layer_control_26fac644139c0a63cfce72b1cf691be2_layers.base_layers,
-                layer_control_26fac644139c0a63cfce72b1cf691be2_layers.overlays,
+            let layer_control_c64229a6c8e22e0a2649162503f437f2 = L.control.layers(
+                layer_control_c64229a6c8e22e0a2649162503f437f2_layers.base_layers,
+                layer_control_c64229a6c8e22e0a2649162503f437f2_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_a5f02651c53d00cf5ce3f7cc4ba17e85);
+            ).addTo(map_c595945e6329e7a10c71f80b26d8b11c);
 
         
 </script>
